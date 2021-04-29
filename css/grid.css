@@ -1,0 +1,40 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+  
+  /* Serve para centralizar */
+  .container {
+      width: 1240px;
+      margin: 0 auto;
+      padding: 0px;
+      position: relative;
+  }
+  
+  /* Garante que uma caixa não flutue sobre a outra  */
+  .container:after, .container:before {
+      content: " ";
+      display: table;
+  }
+  
+  .container:after {
+      clear: both;
+  }
+  
+  .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.grid-1 	{width: 115px;}
+.grid-2 	{width: 270px;}
+.grid-3 	{width: 425px;}
+.grid-4 	{width: 580px;}
+.grid-5 	{width: 735px;}
+.grid-6 	{width: 890px;}
+.grid-7 	{width: 1045px;}
+.grid-8 	{width: 1200px;}
+.grid-1-3   {width: 380px;}
+

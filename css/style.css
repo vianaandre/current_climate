@@ -1,0 +1,262 @@
+/*SETANDO OS ROOTS*/
+:root {
+    /*BACKGROUNDS*/
+    --color-primary: #2A7ABF;
+    --color-secondary: #DEDEDE;
+    --color-yellow: #F2CB05;
+    --color-white: #fff;
+
+    /*COLORS TEXT*/
+    --color-text-weak: #fff;
+    --color-text-strong: #121214;
+}
+* {
+    font-family: Lato, sans-serif, arial, helvetica;
+}
+body {
+    background-color: var(--color-white)
+}
+
+/*ESTILIZADNO O HEADER*/
+.js .header {
+    background-color: var(--color-primary);
+}
+.js .header .header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.js .header .header-content-logo {
+    display: flex;
+    flex: 1;
+}
+.js .header .header-content .header-content-logo img {
+    padding-right: 30px;
+    border-right: solid 2px;
+    border-color: var(--color-yellow);
+}
+.js .header .header-content .header-content-logo h1 {
+    font-size: 2rem;
+    padding-left: 30px;
+    color: var(--color-text-weak);
+}
+.js .header .header-content .header_content_data  {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 30px;
+    border-left: 2px solid;
+    border-color: var(--color-yellow);
+}
+.js .header .header-content .header_content_data p {
+    font-size: 1rem;
+    font-family: Lato, sans-serif, arial, helvetica;
+    font-weight: 500;
+    margin: auto 0;
+    color: var(--color-text-weak)
+}
+
+/*SECTION CLIMATE*/
+.js .content_site {
+    padding: 30px 0;
+}
+.js .content_site .section_current_climate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    font-family: Lato, sans-serif, arial, helvetica;;
+}
+.js .content_site .section_current_climate .information_location {
+    margin-bottom: 40px;
+}
+.js .content_site .section_current_climate .information_location h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: var(--color-text-strong);
+    font-weight: 500;
+}
+.js .content_site .section_current_climate .information_location p {
+    font-size: 1rem;
+    color: var(--color-text-strong);
+    filter: brightness(0.9);
+    font-weight: 500;
+}
+.js .content_site .section_current_climate .information_icn {
+    margin-bottom: 40px
+}
+.js .content_site .section_current_climate .information_climate {
+    padding-bottom: 30px;
+}
+.js .content_site .section_current_climate .information_climate h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.js .content_site .section_current_climate .information_climate p {
+    position: relative;
+    font-size: 1rem;
+    padding: 3px;
+    user-select: none;
+}
+.js .content_site .section_current_climate .information_climate p::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-yellow);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.js .content_site .section_current_climate .information_climate .efeito:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.js .content_site .section_current_climate .information_more {
+    display: flex;
+    padding-top: 30px;
+    border-top: 2px solid;
+    border-color: var(--color-yellow);
+}
+.js .content_site .section_current_climate .information_more .icn_information {
+    margin-right: 30px;
+    text-align: center;
+}
+.js .content_site .section_current_climate .information_more .icn_information:nth-child(3) {
+    margin-right: 0;
+}
+.js .content_site .section_current_climate .information_more .icn_information p {
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+
+/*SEÇÃO DE PREVISÃO DO CLIMA*/
+.js .content_site .previsao {
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    padding: 30px 0;
+    padding-bottom: 0;
+    font-family: Lato, sans-serif, arial, helvetica;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    flex: 1;
+}
+.js 
+.content_site 
+.previsao 
+.primeira_section, 
+.js 
+.content_site 
+.previsao 
+.segunda_section {
+    display: flex;
+}
+
+.js .content_site .previsao .divisor {
+    height: 130px;
+    width: 2px;
+    background: var(--color-yellow);
+    margin: auto 40px;
+} 
+
+.js .content_site .previsao .information_previsao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.js 
+.content_site 
+.previsao 
+.information_previsao:nth-child(4), 
+.js .content_site 
+.previsao 
+.information_previsao:nth-child(8) {
+    margin-right: 0
+}
+.js .content_site .previsao .information_previsao .information_data {
+    padding: 12px 17px;
+    border-radius: 50%;
+    background-color: var(--color-primary)
+}
+.js .content_site .previsao .information_previsao .information_data p {
+    font-size: 1rem;
+    font-weight: 550;
+    color: var(--color-white);
+    text-align: center;
+}
+.js .content_site .previsao .information_previsao .information_icn img { 
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.js .content_site .previsao .information_previsao .information_temperature  .text {
+    font-size: 1rem;
+    color: var(--color-text-strong);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.js .content_site .previsao .information_previsao .information_temperature .information {
+    display: flex;
+} 
+.js 
+.content_site 
+.previsao 
+.information_previsao 
+.information_temperature 
+.information 
+div {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.js 
+.content_site
+.previsao
+.information_previsao
+.information_temperature
+.information
+div
+p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text-strong)
+}
+
+/*FOOTER*/ 
+.js .section_rodape {
+    background-color: var(--color-primary)
+}
+.js .section_rodape .content_footer {
+    display: flex;
+    padding: 30px 0;
+}
+.js .section_rodape .content_footer .social_media {
+    flex: 1;
+}
+.js .section_rodape .content_footer .social_media img {
+    margin-right: 40px;
+}
+.js .section_rodape .content_footer .direitos {
+    display: flex;
+    align-items: center;
+}
+.js .section_rodape .content_footer .direitos div {
+    padding-right: 30px;
+    border-right: solid 2px var(--color-yellow);
+}
+.js .section_rodape .content_footer .direitos p {
+    font-size: 1.2rem;
+    color: var(--color-text-strong);
+    margin-left: 30px;
+}
+
