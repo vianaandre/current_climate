@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="" defer type="module"></script>
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <script src="script/scroll.js" defer type="module"></script>
     <title>Clima Atual da sua Cidade</title>
     <script>
         document.documentElement.classList.add('js')
@@ -288,21 +289,30 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <footer class="section_rodape">
-        <div class="container content_footer">
-            <div class="social_media">
-                <img src="assets/icn-instagram.svg" alt="Ícone do Instagram">
-                <img src="assets/icn-linkedin.svg" alt="Ícone do LinkedIn">
-                <img src="assets/icn-github.svg" alt="Ícone do Github">
-            </div>
-            <div class="direitos">
-                <div>
-                    <img src="assets/icn-logo.svg" alt="Logo do Site" title="Logo do Site" />
+    <footer class="footer">
+        <div class="section_rodape">
+            <div class="container content_footer">
+                <div class="social_media">
+                    <a href="https://www.instagram.com/andre_gust_viana/" target="_blank">
+                        <img src="assets/icn-instagram.svg" alt="Ícone do Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/andr%C3%A9-viana-133353190/" target="_blank">
+                        <img src="assets/icn-linkedin.svg" alt="Ícone do LinkedIn">
+                    </a>
+                    <a href="https://github.com/vianaandre" target="_blank">
+                        <img src="assets/icn-github.svg" alt="Ícone do Github" class="github">
+                    </a>
                 </div>
-                <p>Direitors reservados</p>
+                <div class="direitos">
+                    <div>
+                        <img src="assets/icn-logo.svg" alt="Logo do Site" title="Logo do Site" />
+                    </div>
+                    <p>Direitors reservados</p>
+                </div>
             </div>
         </div>
     </footer>

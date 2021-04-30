@@ -1,0 +1,103 @@
+/*TABLETS*/ 
+@media (min-width: 769px) and (max-width: 1024px) {
+    .js .content_site {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .js .content_site .section_current_climate {
+        width: 372px;
+        margin-bottom: 30px;
+    }
+    .js .content_site .previsao {
+        margin-left: 0;
+        width: 100vw;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .js .header .header-content {
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+    .js .content_site {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .js .content_site .section_current_climate {
+        width: 372px;
+        margin-bottom: 30px;
+    }
+    .js .content_site .previsao {
+        margin-left: 0;
+        width: 90%;
+        margin: 0 10px;
+    }
+    .js .section_rodape .content_footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .js .header .header-content .header-content-logo h1 {
+        display: none;
+    }
+    .js .header .header-content .header-content-logo img {
+        border: none;
+    }
+    .js .header .header-content .header_content_data {
+        padding-left: 20px;
+    }
+    .js .content_site {
+        padding: 20px 0;
+    }
+
+
+    .js .section_rodape .content_footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .js .section_rodape .content_footer .social_media .github {
+        margin-right: 0px;
+    }
+    .js .section_rodape .content_footer .direitos div img {
+        display: none;
+    }
+    .js .section_rodape .content_footer .direitos p {
+        margin-left: 0;
+        text-align: center;
+    }
+    .js .section_rodape .content_footer .direitos div {
+        padding-right: 0;
+    }
+    .js .section_rodape .content_footer .social_media::after {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 2px;
+        background-color: yellow;
+        margin: 20px auto;
+    }
+    .js .content_site  {
+        position: relative;
+    }
+    .js .content_site .previsao {
+        position: relative;
+        margin-left: 0;
+        margin-top: 20px;
+        max-height: 270px;
+        overflow: scroll;
+        flex-direction: row;
+    }
+    .js .content_site .previsao .divisor {
+        display: none;
+    }
+    .js .content_site .previsao .information_previsao {
+        margin-right: 50px;
+    }
+    .js .content_site .previsao .information_previsao:nth-child(1) {
+        margin-left: 40px;
+    }
+}

@@ -17,9 +17,14 @@ body {
     background-color: var(--color-white)
 }
 
+.js {
+    overflow-x: hidden
+}
+
 /*ESTILIZADNO O HEADER*/
 .js .header {
     background-color: var(--color-primary);
+    width: 100vw;
 }
 .js .header .header-content {
     display: flex;
@@ -57,7 +62,9 @@ body {
 
 /*SECTION CLIMATE*/
 .js .content_site {
-    padding: 30px 0;
+    padding: 50px 0;
+    padding-bottom: 0;
+    position: relative;
 }
 .js .content_site .section_current_climate {
     display: flex;
@@ -142,13 +149,17 @@ body {
     background-color: var(--color-secondary);
     border-radius: 5px;
     padding: 30px 0;
+    margin-left: 20px;
     padding-bottom: 0;
     font-family: Lato, sans-serif, arial, helvetica;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 50px;
     flex: 1;
+    margin: 0
+}
+.js .content_site .previsao .seta {
+    display: none;
 }
 .js 
 .content_site 
@@ -195,7 +206,7 @@ body {
     color: var(--color-white);
     text-align: center;
 }
-.js .content_site .previsao .information_previsao .information_icn img { 
+.js .content_site .previsao .information_previsao .information_icn  a img { 
     margin-top: 15px;
     margin-bottom: 10px;
 }
@@ -233,8 +244,16 @@ p {
 }
 
 /*FOOTER*/ 
+.js .footer {
+    position: relative;
+    margin-top: 190px;
+    width: 100vw;
+}
 .js .section_rodape {
-    background-color: var(--color-primary)
+    position: absolute;
+    width: 100vw;
+    bottom: 0px;
+    background-color: var(--color-primary);
 }
 .js .section_rodape .content_footer {
     display: flex;
