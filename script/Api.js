@@ -5,7 +5,6 @@ import controller from './Controller.js'
 export default async function getDados () {
     const long = data.positionClient.longitude
     const lati = data.positionClient.latitude
-    const chaveApi = '005bae086b2f834f591f43fad4011bb5'
     const caminhoClimate = 'https://api.openweathermap.org/data/2.5'
     const caminhoLocation = 'https://api.openweathermap.org/geo/1.0/'
 
