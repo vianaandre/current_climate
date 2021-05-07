@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import nameOfDay from '/current_climate/script/utils/nameOfDays.js'
+=======
+import nameOfDay from '/current_climate/script//utils/nameOfDays.js'
+>>>>>>> ac8fa70893ace950431404af3ed4e8baac46ff94
 
 // criando um data atual
 const currentData = new Date()
