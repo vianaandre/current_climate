@@ -1,5 +1,5 @@
-import data from '/Data.js'
-import getClimate from '/Api.js'
+import data from '/current_climate/script/Data.js'
+import getClimate from '/current_climate/script/Api.js'
 
 export default async function getLocation() {
     if ('geolocation' in navigator) {
