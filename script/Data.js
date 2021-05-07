@@ -18,7 +18,7 @@ const data = {
         hpa: null,
         windSpeed: null,
         description: null,
-        icon: '../assets/icn_pergunta.svg',
+        icon: '/assets/icn_pergunta.svg',
     },
 
     climatePrediction: [],
