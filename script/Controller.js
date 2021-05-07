@@ -1,5 +1,5 @@
-import data from '/Data.js';
-import dayCounter from '/utils/dayCounter.js'
+import data from '/current_climate/script/Data.js';
+import dayCounter from '/current_climate/script/utils/dayCounter.js'
 
 export default async function controller () {
     // selecionando os elementos que serão usados
