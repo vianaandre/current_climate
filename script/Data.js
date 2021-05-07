@@ -1,4 +1,4 @@
-import nameOfDay from './utils/nameOfDays.js'
+import nameOfDay from '/utils/nameOfDays.js'
 
 // criando um data atual
 const currentData = new Date()
