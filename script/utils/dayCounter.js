@@ -1,4 +1,3 @@
-import data from '/current_climate/script/utils/Data.js'
 import data from '/current_climate/script/Data.js'
 import nameOfDays from '/current_climate/script/utils/nameOfDays.js'
 
