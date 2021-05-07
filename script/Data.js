@@ -1,4 +1,4 @@
-import nameOfDay from '/utils/nameOfDays.js'
+import nameOfDay from '/current_climate/script/utils/nameOfDays.js'
 
 // criando um data atual
 const currentData = new Date()
@@ -18,7 +18,7 @@ const data = {
         hpa: null,
         windSpeed: null,
         description: null,
-        icon: '/assets/icn_pergunta.svg',
+        icon: '/current_climate/assets/icn_pergunta.svg',
     },
 
     climatePrediction: [],
