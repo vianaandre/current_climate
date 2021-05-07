@@ -1,5 +1,5 @@
-import data from './Data.js'
-import controller from './Controller.js'
+import data from '/Data.js'
+import controller from '/Controller.js'
 
 export default async function getDados () {
     const long = data.positionClient.longitude
@@ -22,12 +22,12 @@ export default async function getDados () {
     data.climate.hpa = climateJson.current.pressure
     data.climate.windSpeed = `${(climateJson.current.wind_speed * 3.6).toFixed(0)}`
     data.climate.description = climateJson.current.weather[0].description
-    data.climate.icon = `../assets/${climateJson.current.weather[0].icon}.svg`
+    data.climate.icon = `/assets/${climateJson.current.weather[0].icon}.svg`
 
     // criando o objeto que vai para o vetor de previsão 
     const objClimate = await climateJson.daily.map((dataValue) => {
         return {
-            icon: '../assets/' + dataValue.weather[0].icon + '.svg',
+            icon: '/assets/' + dataValue.weather[0].icon + '.svg',
             description: dataValue.weather[0].description,
             tempMax: Math.floor(dataValue.temp.max),
             temMin: Math.floor(dataValue.temp.min)

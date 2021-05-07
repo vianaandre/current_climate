@@ -1,6 +1,4 @@
-import Geolocation from './Geolocation.js';
-import getClimate from './Api.js'
-import Controller from './Controller.js'
+import Geolocation from '/Geolocation.js';
 
 window.onload = async () => {
     const getLocation = await Geolocation()

@@ -1,5 +1,5 @@
 import data from '../Data.js'
-import nameOfDays from './nameOfDays.js'
+import nameOfDays from '/nameOfDays.js'
 
 const currentData = new Date()
 
