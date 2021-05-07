@@ -1,5 +1,5 @@
-import data from './Data.js'
-import controller from './Controller.js'
+import data from '/Data.js'
+import controller from '/Controller.js'
 
 export default async function getDados () {
     const long = data.positionClient.longitude
