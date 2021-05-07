@@ -1,5 +1,5 @@
-import data from '/Data.js'
-import controller from '/Controller.js'
+import data from '/current_climate/script/Data.js'
+import controller from '/current_climate/script/Controller.js'
 
 export default async function getDados () {
     const long = data.positionClient.longitude
@@ -27,7 +27,7 @@ export default async function getDados () {
     // criando o objeto que vai para o vetor de previsão 
     const objClimate = await climateJson.daily.map((dataValue) => {
         return {
-            icon: '/assets/' + dataValue.weather[0].icon + '.svg',
+            icon: '/current_climate/assets/' + dataValue.weather[0].icon + '.svg',
             description: dataValue.weather[0].description,
             tempMax: Math.floor(dataValue.temp.max),
             temMin: Math.floor(dataValue.temp.min)
