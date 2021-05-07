@@ -22,7 +22,7 @@ export default async function getDados () {
     data.climate.hpa = climateJson.current.pressure
     data.climate.windSpeed = `${(climateJson.current.wind_speed * 3.6).toFixed(0)}`
     data.climate.description = climateJson.current.weather[0].description
-    data.climate.icon = `../assets/${climateJson.current.weather[0].icon}.svg`
+    data.climate.icon = `/assets/${climateJson.current.weather[0].icon}.svg`
 
     // criando o objeto que vai para o vetor de previsão 
     const objClimate = await climateJson.daily.map((dataValue) => {
