@@ -1,5 +1,5 @@
 import data from '/current_climate/script/Data.js'
-import nameOfDays from '/nameOfDays.js'
+import nameOfDays from '/current_climate/script/utils/nameOfDays.js'
 
 const currentData = new Date()
 
