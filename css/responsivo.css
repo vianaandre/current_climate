@@ -1,19 +1,4 @@
 /*TABLETS*/ 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .js .content_site {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .js .content_site .section_current_climate {
-        width: 372px;
-        margin-bottom: 30px;
-    }
-    .js .content_site .previsao {
-        margin-left: 0;
-        width: 100vw;
-    }
-}
 @media (min-width: 768px) and (max-width: 1024px) {
     .js .header .header-content {
        padding-left: 10px;
@@ -32,6 +17,12 @@
         margin-left: 0;
         width: 90%;
         margin: 0 10px;
+        padding: 30px 10px;
+    }
+    .js .content_site .previsao .previsao_content .information_previsao {
+        margin-left: 20px;
+        margin-right: 20px;
+        min-width: 110px;
     }
     .js .section_rodape .content_footer {
         padding-left: 10px;
@@ -52,8 +43,9 @@
     .js .content_site {
         padding: 20px 0;
     }
-
-
+    .js .content_site .section_current_climate {
+        padding: 20px 0;
+    }
     .js .section_rodape .content_footer {
         flex-direction: column;
         align-items: center;
@@ -77,27 +69,30 @@
         display: block;
         width: 150px;
         height: 2px;
-        background-color: yellow;
+        background-color: #121214;
         margin: 20px auto;
     }
-    .js .content_site  {
-        position: relative;
-    }
     .js .content_site .previsao {
-        position: relative;
         margin-left: 0;
         margin-top: 20px;
-        max-height: 270px;
         overflow: scroll;
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px;
     }
-    .js .content_site .previsao .divisor {
+    .js .content_site .previsao .previsao_content {
+        height: 500px;
+        padding: 40px 0;
+        padding-bottom: 0;
+        overflow: scroll;
+    }
+    .js .content_site .previsao .previsao_content .information_previsao {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    } 
+    .js .content_site .previsao .previsao_content .divisor {
         display: none;
     }
-    .js .content_site .previsao .information_previsao {
-        margin-right: 50px;
-    }
-    .js .content_site .previsao .information_previsao:nth-child(1) {
-        margin-left: 40px;
-    }
+
 }

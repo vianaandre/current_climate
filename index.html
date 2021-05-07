@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
-    <script src="script/Controller.js" defer type="module"></script>
-    <script src="script/Script.js" defer type="module"></script>
+    <script src="/script/Script.js" defer type="module"></script>
+    <script src="/script/Controller.js" defer type="module"></script>
     <title>Clima Atual da sua Cidade</title>
     <script>
         document.documentElement.classList.add('js')
@@ -28,7 +28,7 @@
                 <h1>Current Climate</h1>
             </div>
             <div class="header_content_data">
-                <p>Seg, 26 Abril</p>
+                <p id="current_data"></p>
             </div>
         </div>
     </header>
@@ -37,58 +37,57 @@
         <!--SEÇÃO DE CLIMA ATUAL-->
         <div class="grid-3 section_current_climate">
             <div class="information_location">
-                <h2 id="location_current">Missal/PR</h2>
-                <p id="day_current">Segunda, 9:00 AM</p>
+                <h2 id="location_current"></h2>
+                <p id="day_current"></p>
             </div>
             <div class="information_icn">
-                <img src="assets/icn-section-1.svg" id="icon_current" alt="Ícone de Representação">
+                <img src="assets/icn_pergunta.svg" id="icon_current" alt="Ícone de Representação">
             </div>
             <div class="information_climate">
-                <h2 id="climate_current">35ºC</h2>
-                <p class="efeito" id="description_current">Ensolarado</p>
+                <h2 id="climate_current"></h2>
+                <p class="efeito" id="description_current"></p>
             </div>
             <div class="information_more">
                 <div class="icn_information">
                     <img src="assets/icn-vento.svg" alt="Ícone de Velocidade do Vento">
-                    <p id="wind_speed">13 km/h</p>
+                    <p id="wind_speed"></p>
                 </div>
                 <div class="icn_information">
                     <img src="assets/icn-umidade.svg" alt="Ícone de Porcentagem da Umidade">
-                    <p id="ur_current">60% UR</p>
+                    <p id="ur_current"></p>
                 </div>
                 <div class="icn_information">
                     <img src="assets/icn_densidade_demografica.svg" alt="Ícone de Densidade Demografica">
-                    <p id="hpa_current">1000 hPa</p>
+                    <p id="hpa_current"></p>
                 </div>
             </div>
         </div>
 
         <!--SEÇÃO DE PREVISÃO DO CLIMA-->
         <div class="previsao">
-            <!--PRIMEIRO DIA-->
-            <div class="primeira_section">
+            <div class="previsao_content">
+                <!--PRIMEIRO DIA-->
                 <div class="information_previsao">
                     <div class="information_data">
                         <p>
-                            27 <br />
-                            qua
+                            ?
                         </p>
                     </div>
                     <div class="information_icn">
-                        <img src="assets/icn_section_2_ensolarado.svg" alt="Ícone Representativo">
+                        <img src="/assets/icn_pergunta.svg" alt="Ícone Representativo">
                     </div>
                     <div class="information_temperature">
                         <p class="text">
-                            ensolarado
+                            
                         </p>
                         <div class="information">
                             <div>
                                 <img src="assets/icn_climate_minimo.svg" alt="Ícone Clima Min">
-                                <p>25º</p>
+                                <p class="min"></p>
                             </div>
                             <div>
                                 <img src="assets/icn_climate_maximo.svg" alt="Ícone Clima Max">
-                                <p>35º</p>
+                                <p class="max"></p>
                             </div>
                         </div>
                     </div>
@@ -98,25 +97,24 @@
                 <div class="information_previsao">
                     <div class="information_data">
                         <p>
-                            27 <br />
-                            qua
+                            ?
                         </p>
                     </div>
                     <div class="information_icn">
-                        <img src="assets/icn_section_2_ensolarado.svg" alt="Ícone Representativo">
+                        <img src="/assets/icn_pergunta.svg" alt="Ícone Representativo">
                     </div>
                     <div class="information_temperature">
                         <p class="text">
-                            ensolarado
+                            
                         </p>
                         <div class="information">
                             <div>
                                 <img src="assets/icn_climate_minimo.svg" alt="Ícone Clima Min">
-                                <p>25º</p>
+                                <p class="min"></p>
                             </div>
                             <div>
                                 <img src="assets/icn_climate_maximo.svg" alt="Ícone Clima Max">
-                                <p>35º</p>
+                                <p class="max"></p>
                             </div>
                         </div>
                     </div>
@@ -126,25 +124,24 @@
                 <div class="information_previsao">
                     <div class="information_data">
                         <p>
-                            27 <br />
-                            qua
+                            
                         </p>
                     </div>
                     <div class="information_icn">
-                        <img src="assets/icn_section_2_ensolarado.svg" alt="Ícone Representativo">
+                        <img src="/assets/icn_pergunta.svg" alt="Ícone Representativo">
                     </div>
                     <div class="information_temperature">
                         <p class="text">
-                            ensolarado
+                            
                         </p>
                         <div class="information">
                             <div>
                                 <img src="assets/icn_climate_minimo.svg" alt="Ícone Clima Min">
-                                <p>25º</p>
+                                <p class="min"></p>
                             </div>
                             <div>
                                 <img src="assets/icn_climate_maximo.svg" alt="Ícone Clima Max">
-                                <p>35º</p>
+                                <p class="max"></p>
                             </div>
                         </div>
                     </div>
@@ -154,54 +151,50 @@
                 <div class="information_previsao">
                     <div class="information_data">
                         <p>
-                            27 <br />
-                            qua
+                            
                         </p>
                     </div>
                     <div class="information_icn">
-                        <img src="assets/icn_section_2_ensolarado.svg" alt="Ícone Representativo">
+                        <img src="/assets/icn_pergunta.svg" alt="Ícone Representativo">
                     </div>
                     <div class="information_temperature">
                         <p class="text">
-                            ensolarado
+                            
                         </p>
                         <div class="information">
                             <div>
                                 <img src="assets/icn_climate_minimo.svg" alt="Ícone Clima Min">
-                                <p>25º</p>
+                                <p class="min"></p>
                             </div>
                             <div>
                                 <img src="assets/icn_climate_maximo.svg" alt="Ícone Clima Max">
-                                <p>35º</p>
+                                <p class="max"></p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="segunda_section">
                 <!--QUINTO DIA-->
                 <div class="information_previsao">
                     <div class="information_data">
                         <p>
-                            27 <br />
-                            qua
+                            ?
                         </p>
                     </div>
                     <div class="information_icn">
-                        <img src="assets/icn_section_2_ensolarado.svg" alt="Ícone Representativo">
+                        <img src="/assets/icn_pergunta.svg" alt="Ícone Representativo">
                     </div>
                     <div class="information_temperature">
                         <p class="text">
-                            ensolarado
+                            
                         </p>
                         <div class="information">
                             <div>
                                 <img src="assets/icn_climate_minimo.svg" alt="Ícone Clima Min">
-                                <p>25º</p>
+                                <p class="min"></p>
                             </div>
                             <div>
                                 <img src="assets/icn_climate_maximo.svg" alt="Ícone Clima Max">
-                                <p>35º</p>
+                                <p class="max"></p>
                             </div>
                         </div>
                     </div>
@@ -211,25 +204,24 @@
                 <div class="information_previsao">
                     <div class="information_data">
                         <p>
-                            27 <br />
-                            qua
+                            
                         </p>
                     </div>
                     <div class="information_icn">
-                        <img src="assets/icn_section_2_ensolarado.svg" alt="Ícone Representativo">
+                        <img src="/assets/icn_pergunta.svg" alt="Ícone Representativo">
                     </div>
                     <div class="information_temperature">
                         <p class="text">
-                            ensolarado
+                            
                         </p>
                         <div class="information">
                             <div>
                                 <img src="assets/icn_climate_minimo.svg" alt="Ícone Clima Min">
-                                <p>25º</p>
+                                <p class="min"></p>
                             </div>
                             <div>
                                 <img src="assets/icn_climate_maximo.svg" alt="Ícone Clima Max">
-                                <p>35º</p>
+                                <p class="max"></p>
                             </div>
                         </div>
                     </div>
@@ -239,25 +231,24 @@
                 <div class="information_previsao">
                     <div class="information_data">
                         <p>
-                            27 <br />
-                            qua
+                            
                         </p>
                     </div>
                     <div class="information_icn">
-                        <img src="assets/icn_section_2_ensolarado.svg" alt="Ícone Representativo">
+                        <img src="/assets/icn_pergunta.svg" alt="Ícone Representativo">
                     </div>
                     <div class="information_temperature">
                         <p class="text">
-                            ensolarado
+                            
                         </p>
                         <div class="information">
                             <div>
                                 <img src="assets/icn_climate_minimo.svg" alt="Ícone Clima Min">
-                                <p>25º</p>
+                                <p class="min"></p>
                             </div>
                             <div>
                                 <img src="assets/icn_climate_maximo.svg" alt="Ícone Clima Max">
-                                <p>35º</p>
+                                <p class="max"></p>
                             </div>
                         </div>
                     </div>
@@ -267,30 +258,29 @@
                 <div class="information_previsao">
                     <div class="information_data">
                         <p>
-                            27 <br />
-                            qua
+                            
                         </p>
                     </div>
                     <div class="information_icn">
-                        <img src="assets/icn_section_2_ensolarado.svg" alt="Ícone Representativo">
+                        <img src="/assets/icn_pergunta.svg" alt="Ícone Representativo">
                     </div>
                     <div class="information_temperature">
                         <p class="text">
-                            ensolarado
+                            
                         </p>
                         <div class="information">
                             <div>
                                 <img src="assets/icn_climate_minimo.svg" alt="Ícone Clima Min">
-                                <p>25º</p>
+                                <p class="min"></p>
                             </div>
                             <div>
                                 <img src="assets/icn_climate_maximo.svg" alt="Ícone Clima Max">
-                                <p>35º</p>
+                                <p class="max"></p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
 
         </div>
     </section>
@@ -299,13 +289,8 @@
         <div class="section_rodape">
             <div class="container content_footer">
                 <div class="social_media">
-                    <a href="https://www.instagram.com/andre_gust_viana/" target="_blank">
-                        <img src="assets/icn-instagram.svg" alt="Ícone do Instagram">
-                    </a>
-                    <a href="https://www.linkedin.com/in/andr%C3%A9-viana-133353190/" target="_blank">
-                        <img src="assets/icn-linkedin.svg" alt="Ícone do LinkedIn">
-                    </a>
                     <a href="https://github.com/vianaandre" target="_blank">
+                        <h3>Me siga no <b>GitHub</b></h3>
                         <img src="assets/icn-github.svg" alt="Ícone do Github" class="github">
                     </a>
                 </div>

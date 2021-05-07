@@ -5,6 +5,7 @@
     --color-secondary: #DEDEDE;
     --color-yellow: #F2CB05;
     --color-white: #fff;
+    --color-divider-strong: #121214;
 
     /*COLORS TEXT*/
     --color-text-weak: #fff;
@@ -38,7 +39,7 @@ body {
 .js .header .header-content .header-content-logo img {
     padding-right: 30px;
     border-right: solid 2px;
-    border-color: var(--color-yellow);
+    border-color: var(--color-white);
 }
 .js .header .header-content .header-content-logo h1 {
     font-size: 2rem;
@@ -50,7 +51,7 @@ body {
     justify-content: flex-end;
     padding-left: 30px;
     border-left: 2px solid;
-    border-color: var(--color-yellow);
+    border-color: var(--color-white);
 }
 .js .header .header-content .header_content_data p {
     font-size: 1rem;
@@ -67,20 +68,20 @@ body {
     position: relative;
 }
 .js .content_site .section_current_climate {
-    height: 32rem;
     min-height: 512px;
     max-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0;
+    padding: 50px 0;
     background-color: var(--color-secondary);
     border-radius: 5px;
     font-family: Lato, sans-serif, arial, helvetica;
+    margin-left: 0;
 }
 .js .content_site .section_current_climate .information_location {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 46px;
 }
 .js .content_site .section_current_climate .information_location h2 {
     font-size: 2rem;
@@ -95,10 +96,17 @@ body {
     font-weight: 500;
 }
 .js .content_site .section_current_climate .information_icn {
-    margin-bottom: 40px
+    margin-bottom: 47px;
+    background-color: var(--color-primary);
+    width: 140px;
+    height: 123px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
 }
 .js .content_site .section_current_climate .information_climate {
     padding-bottom: 30px;
+    text-align: center;
 }
 .js .content_site .section_current_climate .information_climate h2 {
     font-size: 2rem;
@@ -118,7 +126,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--color-yellow);
+    background-color: var(--color-divider-strong);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -134,7 +142,7 @@ body {
     display: flex;
     padding-top: 30px;
     border-top: 2px solid;
-    border-color: var(--color-yellow);
+    border-color: var(--color-divider-strong);
 }
 .js .content_site .section_current_climate .information_more .icn_information {
     margin-right: 30px;
@@ -150,22 +158,20 @@ body {
 
 /*SEÇÃO DE PREVISÃO DO CLIMA*/
 .js .content_site .previsao {
-    height: 32rem;
     min-height: 400px;
-    max-height: 600px;
     background-color: var(--color-secondary);
     border-radius: 5px;
-    padding: 30px 0;
     margin-left: 20px;
     padding-bottom: 0;
     font-family: Lato, sans-serif, arial, helvetica;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: center;
     flex: 1;
-    margin: 0
+    margin: 0;
 }
-.js .content_site .previsao .seta {
+.js .content_site .previsao #resp-dots {
     display: none;
 }
 .js 
@@ -179,42 +185,46 @@ body {
     display: flex;
 }
 
-.js .content_site .previsao .divisor {
-    height: 130px;
-    width: 2px;
-    background: var(--color-yellow);
-    margin: auto 40px;
-} 
+.js .content_site .previsao .previsao_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    padding-bottom: 0;
+}
+.js .content_site .previsao .previsao_content .divisor{
+    height: 140px;
+    width: 2px; 
+    background-color: var(--color-divider-strong);
+    margin: auto 0;
+}
 
-.js .content_site .previsao .information_previsao {
+.js .content_site .previsao .previsao_content .information_previsao {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px
 }
 
-.js 
-.content_site 
-.previsao 
-.information_previsao:nth-child(4), 
-.js .content_site 
-.previsao 
-.information_previsao:nth-child(8) {
-    margin-right: 0
-}
-.js .content_site .previsao .information_previsao .information_data {
-    padding: 12px 17px;
+.js .content_site .previsao .previsao_content .information_previsao .information_data {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background-color: var(--color-primary)
 }
-.js .content_site .previsao .information_previsao .information_data p {
+.js .content_site .previsao .previsao_content .information_previsao .information_data p {
     font-size: 1rem;
     font-weight: 550;
     color: var(--color-white);
     text-align: center;
 }
-.js .content_site .previsao .information_previsao .information_icn  a img { 
-    margin-top: 15px;
+.js .content_site .previsao .previsao_content .information_previsao .information_icn  img { 
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 .js .content_site .previsao .information_previsao .information_temperature  .text {
@@ -269,8 +279,17 @@ p {
 .js .section_rodape .content_footer .social_media {
     flex: 1;
 }
+.js .section_rodape .content_footer .social_media a {
+    display: flex;
+    align-items: center;
+}
+.js .section_rodape .content_footer .social_media a h3 {
+    color: var(--color-white);
+    font-weight: 550;
+    font-size: 18px;
+}
 .js .section_rodape .content_footer .social_media img {
-    margin-right: 40px;
+    margin-left: 20px;
 }
 .js .section_rodape .content_footer .direitos {
     display: flex;
@@ -278,11 +297,11 @@ p {
 }
 .js .section_rodape .content_footer .direitos div {
     padding-right: 30px;
-    border-right: solid 2px var(--color-yellow);
+    border-right: solid 2px var(--color-white);
 }
 .js .section_rodape .content_footer .direitos p {
     font-size: 1.2rem;
-    color: var(--color-text-strong);
+    color: var(--color-text-weak);
     margin-left: 30px;
 }
 

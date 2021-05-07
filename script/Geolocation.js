@@ -14,13 +14,16 @@ export default async function getLocation() {
         },
                 
         (error) => {
-            alert('Busca de clima padrão vem do Município de Missal/PR')
+            alert('Busca de clima padrão vem do Município de Foz de Iguaçu/BR')
             console.log(error)
+            getClimate()
 
         },
     )
     } else {
         alert('Não foi possível pegar sua Localização!!!')
+        alert('Busca de Clima padrão vem do Município de Foz de Iguaçu/BR')
+        getClimate()
 
     }
 }
