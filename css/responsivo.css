@@ -89,6 +89,7 @@
     }
     .js .content_site .previsao .previsao_content .information_previsao {
         margin: 0 auto;
+        width: 150px;
         margin-bottom: 50px;
     } 
     .js .content_site .previsao .previsao_content .divisor {
