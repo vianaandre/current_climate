@@ -49,10 +49,10 @@
 </p>
 <h3 align="center">Feito com carinho por André</h3>
 <p align="center">
-<a href="https://www.instagram.com/andre_gust_viana/">
-<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+<a href="https://www.linkedin.com/in/andr%C3%A9-viana-133353190/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-<a href="https://www.facebook.com/andre.dapper.121">
-<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
+<a href="https://andreviana.vercel.app/">
+<img src="https://res.cloudinary.com/andreimagens/image/upload/v1625767607/buttonPortfolio_rtsuzq.svg" />
 </a>
 </p>
